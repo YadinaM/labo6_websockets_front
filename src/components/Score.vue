@@ -13,7 +13,7 @@
 
     onMounted(() => {
         // Connect to the WebSocket server
-        socket = new WebSocket('ws://localhost:3000/primus');
+        socket = new WebSocket('wss://labo6-websockets.onrender.com/primus');
 
         socket.onmessage = (event) => {
             let data = JSON.parse(event.data);
